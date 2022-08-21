@@ -1,23 +1,27 @@
-// My first component
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+// JSX
+// JSX = JavaScript + HTML
 
-const rootElement = document.getElementById('root')
-const root = ReactDOM.createRoot(rootElement)
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+const rootElement = document.getElementById("root");
+const root = ReactDOM.createRoot(rootElement);
 
 //Creating component 'Greeting'
-function Greeting(){
-    return  <di>
-                <h1>Hello World</h1>
-                <p>lorem 3 </p>
-            </di> 
+function Greeting() {
+  const name = "arturo";
+  const age = 24;
+  const married = false;
+
+  if (married) {
+    return (
+      <h1>
+        Hello {name} {age - 2} {married}
+      </h1>
+    );
+  }
+  //Allow to use emotes
+  return <h1>{married ? "estoy casado" : "no estoy casado 😜"}</h1>;
 }
 
-root.render(
-    <div>
-        {/*Call component method 1*/}
-        {Greeting()} 
-        {/*Call component method 2*/}
-        <Greeting></Greeting>
-    </div>
-)
+root.render(<Greeting />);
