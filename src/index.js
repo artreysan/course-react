@@ -8,19 +8,18 @@ const rootElement = document.getElementById("root");
 const root = ReactDOM.createRoot(rootElement);
 
 function Greeting() {
-    //Objects
-    const user = {
-        firstname: 'ryan',
-        lastname: 'Ray',
-        married: false
+    //Function in fuction
+    function add(x,y){
+        return x+y;
     }
-    //Convert objecto to string
     return <div>
-        <h1>{JSON.stringify(user.firstname)}</h1>
-        <h2>{JSON.stringify(user.lastname)}</h2>
         {/*Boolean*/}
-        <h3>{user.married.toString() }</h3>
+        <h3>{add(10,30)}</h3>
     </div>;
 }
 
-root.render(<Greeting />);
+//Fragment <> </>
+// Remove father tag or clean tag 
+root.render(<>
+    <Greeting />
+</>);
