@@ -7,21 +7,20 @@ import ReactDOM from "react-dom/client";
 const rootElement = document.getElementById("root");
 const root = ReactDOM.createRoot(rootElement);
 
-//Creating component 'Greeting'
 function Greeting() {
-  const name = "arturo";
-  const age = 24;
-  const married = false;
-
-  if (married) {
-    return (
-      <h1>
-        Hello {name} {age - 2} {married}
-      </h1>
-    );
-  }
-  //Allow to use emotes
-  return <h1>{married ? "estoy casado" : "no estoy casado 😜"}</h1>;
+    //Objects
+    const user = {
+        firstname: 'ryan',
+        lastname: 'Ray',
+        married: false
+    }
+    //Convert objecto to string
+    return <div>
+        <h1>{JSON.stringify(user.firstname)}</h1>
+        <h2>{JSON.stringify(user.lastname)}</h2>
+        {/*Boolean*/}
+        <h3>{user.married.toString() }</h3>
+    </div>;
 }
 
 root.render(<Greeting />);
