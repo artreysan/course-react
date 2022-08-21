@@ -1,25 +1,17 @@
-// JSX
-// JSX = JavaScript + HTML
+// Ecmascript  
 
 import React from "react";
 import ReactDOM from "react-dom/client";
+import {Greeting,UserCard} from './Greeting'
+import Product,{Navbar} from './Product'
 
 const rootElement = document.getElementById("root");
 const root = ReactDOM.createRoot(rootElement);
 
-function Greeting() {
-    //Function in fuction
-    function add(x,y){
-        return x+y;
-    }
-    return <div>
-        {/*Boolean*/}
-        <h3>{add(10,30)}</h3>
-    </div>;
-}
 
-//Fragment <> </>
-// Remove father tag or clean tag 
 root.render(<>
+    <UserCard></UserCard>
     <Greeting />
+    <Product></Product>
+    <Navbar></Navbar>
 </>);
