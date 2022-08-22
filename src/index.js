@@ -10,12 +10,12 @@ const root = ReactDOM.createRoot(rootElement);
 
 
 root.render(<>
-    <UserCard></UserCard>
-    <Greeting title='string'/>
-    <Greeting gret='bye'/>
-    <Greeting num={30}/>
-    <Greeting bool={true}/>
-    <Greeting arr={[1,2,3]}/>
+    <UserCard number={11} title='Carta de amor'></UserCard>
+    <UserCard number={12} />
+    <Greeting title='Hola 1'/>
+    <Greeting title='Hola 2'/>
+    <Greeting title='Hola 3'/>
+    <Greeting title='Hola 4'/>
     <Product></Product>
     <Navbar></Navbar>
 </>);
