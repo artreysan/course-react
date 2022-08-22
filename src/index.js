@@ -1,4 +1,4 @@
-// Ecmascript  
+// PROPS
 
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -11,7 +11,11 @@ const root = ReactDOM.createRoot(rootElement);
 
 root.render(<>
     <UserCard></UserCard>
-    <Greeting />
+    <Greeting title='string'/>
+    <Greeting gret='bye'/>
+    <Greeting num={30}/>
+    <Greeting bool={true}/>
+    <Greeting arr={[1,2,3]}/>
     <Product></Product>
     <Navbar></Navbar>
 </>);
