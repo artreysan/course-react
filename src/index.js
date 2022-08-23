@@ -1,6 +1,6 @@
-//  defaultProps
-// Created component Button.js
-// Send parameter text 
+// propTypes 
+// Installed module prop-types
+// Modify Button.js
 
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -12,8 +12,11 @@ const root = ReactDOM.createRoot(rootElement);
 root.render(
   <>
     <Button text='Pay'/>
-    {/*IF not send parameter the componet use the parameter for dafault => 'click me'*/}
+    <Button text= 'Hello'/>
+    {/*View error in console*/}
+    <Button text= {true}/>
     <Button />
+    <Button text=''/>
     </>
 );
 
