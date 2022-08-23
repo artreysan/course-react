@@ -1,6 +1,9 @@
-// Component's Styles 
-// Created task.css
-// Import CSS in Task.js
+// Component Type Class
+
+// Created component Saludar.js
+// Modify Saludar.js
+// Create class and import
+import {Saludar} from './Saludar'
 
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -11,8 +14,7 @@ const root = ReactDOM.createRoot(rootElement);
 
 root.render(
   <>
-    <TaskCard  ready = {false}/>
-    <TaskCardTwo ready = {true}/>
+    <Saludar> </Saludar>
   </>
 );
 
