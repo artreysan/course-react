@@ -1,20 +1,45 @@
-// Component Type Class
+// Event Handlers
 
-// Created component Saludar.js
-// Modify Saludar.js
-// Create class and import
-import {Saludar} from './Saludar'
+/*eventos importantes:
+onClick
+onDoubleClick
+onChange
+onSubmit
+...
 
+INVESTIGAR A DETALLE
+*/
 import React from "react";
 import ReactDOM from "react-dom/client";
-import {TaskCard,TaskCardTwo} from './Task'
+import { Button } from './Button';
 
 const rootElement = document.getElementById("root");
 const root = ReactDOM.createRoot(rootElement);
 
+const handleChange = (e)=> {
+    console.log(e.target.value )
+} 
+
 root.render(
   <>
-    <Saludar> </Saludar>
+  <Button text='El boton'></Button>
+  {/*Evento cambio*/}
+  {/*Method 1*/}
+  <input onChange={(e)=> {
+    console.log(e.target.value )
+    console.log('escribiendo en el imput')
+  }}></input>
+  {/*Method 2*/}
+  <input onChange={handleChange}/>
+  {/*Evento envio*/}
+  <form onSubmit={(e)=>{
+    //Cancela la recarga
+    e.preventDefault()
+    console.log('enviado')
+  }}>  
+  <h1>Registro de usuario</h1>
+  <button>send</button>
+  </form> 
   </>
 );
 
