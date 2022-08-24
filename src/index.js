@@ -1,4 +1,6 @@
+
 // Event Handlers
+
 
 /*eventos importantes:
 onClick
@@ -11,7 +13,9 @@ INVESTIGAR A DETALLE
 */
 import React from "react";
 import ReactDOM from "react-dom/client";
+
 import { Button } from './Button';
+
 
 const rootElement = document.getElementById("root");
 const root = ReactDOM.createRoot(rootElement);
@@ -40,7 +44,7 @@ root.render(
   <h1>Registro de usuario</h1>
   <button>send</button>
   </form> 
-  </>
+
 );
 
 
