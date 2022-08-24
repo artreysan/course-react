@@ -44,7 +44,7 @@ root.render(
   <h1>Registro de usuario</h1>
   <button>send</button>
   </form> 
-
+  </>
 );
 
 
