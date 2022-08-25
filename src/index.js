@@ -9,8 +9,10 @@ const rootElement = document.getElementById("root");
 const root = ReactDOM.createRoot(rootElement);
 
 function Counter(){
-
-  const [counter, setCounter] = useState(0);
+  //useCase return a Arry, 1: variable and function
+  // variable is same to counter = 10
+  // function: change the state of variable 
+  const [counter, setCounter] = useState(10);
   
   return (
     <div>
@@ -18,7 +20,14 @@ function Counter(){
       <button onClick={()=>{
         setCounter(counter+1)
       }}>Add</button>
+      <button onClick={()=>{
+        setCounter(counter-1)
+      }}>Sub</button>
+      <button onClick={()=>{
+        setCounter(0)
+      }}>Reset</button>
     </div>
+
   )
 }
 
