@@ -1,16 +1,5 @@
-//Array en React
-
-//Use:
-//https://robohash.org/
-
-//More method for Array React:
-/*
-map
-filter
-find
-reduce
-sort
-*/
+// Hooks in React
+// https://es.reactjs.org/docs/hooks-intro.html
 
 import React from "react";
 import ReactDOM from "react-dom/client";
