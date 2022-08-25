@@ -9,14 +9,14 @@ const rootElement = document.getElementById("root");
 const root = ReactDOM.createRoot(rootElement);
 
 function Counter(){
-  let counter =0;
 
-  //No se actuala
+  const [counter, setCounter] = useState(0);
+  
   return (
     <div>
       <h1>Counter: {counter}</h1>
       <button onClick={()=>{
-         counter = counter+10;
+        setCounter(counter+1)
       }}>Add</button>
     </div>
   )
@@ -24,7 +24,7 @@ function Counter(){
 
 root.render(
   <>
-
+    <Counter></Counter>
   </>
 );
 
