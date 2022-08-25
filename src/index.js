@@ -1,9 +1,13 @@
-// FETCH API 
+//Third Party modules, react-icons 
+//Installed: npm install react-icons --save
+//Import icons
+import {VscBug} from 'react-icons/vsc'
+import {VscGlobe} from 'react-icons/vsc'
 
-// Created Post.js
-// Import Component
-import {Post} from './Post.js'
-// importamos datos de json en el archivo Post.js
+//More components:
+/* Search:
+      - Material UI
+*/
 
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -17,7 +21,9 @@ const handleChange = (e)=> {
 
 root.render(
   <>
-  <Post></Post>
+  <VscBug></VscBug>
+  <VscGlobe/>
+  
   </>
 );
 
